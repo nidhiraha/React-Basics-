@@ -1,0 +1,28 @@
+{
+  "name": "exploring-react",
+  "version": "1.0.0",
+  "description": "Hello React",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "C:/Users/nidhi/OneDrive/Desktop/Namaste React/.git/"
+  },
+  "keywords": [
+    "hello",
+    "react"
+  ],
+  "author": "Nidhi Rahangdale",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "browserslist":[
+    "last 2 versions"
+]
+}

@@ -1,3 +1,7 @@
+import React from "react";
+import ReactDOM from "react-dom/client"
+
+
 //Nested
 
 // <div id="parent">
@@ -40,3 +44,5 @@ const heading = React.createElement(
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(nestedElement);
+
+
