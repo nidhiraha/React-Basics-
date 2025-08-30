@@ -1,48 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 
-
-//Nested
-
-// <div id="parent">
-//   <div id="child">
-//     <h1>I'm h1 tag</h1>
-//   </div>
-// </div>
-
-//Siblings
-
-// <div id="parent">
-//   <div id="child">
-//     <h1>I'm h1 tag</h1>
-//       <h2>I'm h1 tag</h2>
-//   </div>
-//   <div id="child2">
-//     <h1>I'm h1 tag</h1>
-//       <h2>I'm h1 tag</h2>
-//   </div>
-// </div>
-
-const nestedElement = React.createElement(
-  "div",{id:"parent"},[
-    React.createElement("div",{id:"child"},[
-      React.createElement("h1",{},"I'm h1 tag"),
-      React.createElement("h2",{},"I'm h2 tag")
-    ],
-  )
-  ,React.createElement("div",{id:"child2"},[
-      React.createElement("h1",{},"I'm h1 tag"),
-      React.createElement("h2",{},"I'm h2 tag")
-    ],
-  )]
-);
-
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello World From React!"
+// const heading = React.createElement("h1",{id:"heading"},"Hello World"); 
+const JsxHeading =(<h1 className="root">Hello World From Jsx</h1>);
+const HeadingComponent = ()=>(
+  <div>
+  {JsxHeading}
+  {'Hello I am inside curtly Braces'}
+ <h1>Hello All From Functional Component</h1>
+ </div>
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(nestedElement);
-
-
+root.render(<HeadingComponent/>);
